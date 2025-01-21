@@ -1,0 +1,6 @@
+s1=float(input("enter  a s1 value:"))
+s2=float(input("enter  a s2 value:"))
+s3=float(input("enter  a s3 value:"))
+s4=float(input("enter  a s4 value:"))
+ps=(s1+s1+s1+s1)
+print("ps={}".format(s1,s2,s3,s4,ps))
