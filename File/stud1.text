@@ -1,0 +1,46 @@
+	========================================================
+					Writing the Data to the File
+			========================================================
+=>Towrite the data to the file, we have Two Pre-defined functions present in File Pointer Object whose type is TextIOWrapper. They are
+
+					1. write()
+					2. writelines()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. write()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:     FilePointerObj.write(strdata)
+=>This Function is used for Writing any Type of Value to the File in the form of str.
+=>if we have non-str data then we must convert it into str by using str()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. writelines()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:     FilePointerObj.writelines(str(Iterable-Object))
+=>This Function is used for Writing any Type of Iterable-Object data to the File in the form of str.
+=>if we have non-str data then we must convert it into str by using str()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE: Here write() and writelines() writes the data to the file in the form of Value by Value. which is one of the time 
+           consuming Process (not able write all values at Once)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	========================================================
+					Writing the Data to the File
+			========================================================
+=>To write the data to the file, we have Two Pre-defined functions present in File Pointer Object whose type is TextIOWrapper. They are
+
+					1. write()
+					2. writelines()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. write()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:     FilePointerObj.write(strdata)
+=>This Function is used for Writing any Type of Value to the File in the form of str.
+=>if we have non-str data then we must convert it into str by using str()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. writelines()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=>Syntax:     FilePointerObj.writelines(str(Iterable-Object))
+=>This Function is used for Writing any Type of Iterable-Object data to the File in the form of str.
+=>if we have non-str data then we must convert it into str by using str()
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTE: Here write() and writelines() writes the data to the file in the form of Value by Value. which is one of the time 
+           consuming Process (not able write all values at Once)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
