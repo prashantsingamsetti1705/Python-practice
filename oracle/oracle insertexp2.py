@@ -52,7 +52,7 @@ def insert():
             print("dont not enter alpha numeric")
         except SpaceError:
             print("donot enter sapce for en,ecompany")
-        except orc.DatabaseError:
-            print("there is problem in orcale db")
+        except orc.DatabaseError as db:
+            print("there is problem in orcale db=",db)
 #main program
 insert()#callin the function

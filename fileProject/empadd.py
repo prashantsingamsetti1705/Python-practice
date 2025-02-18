@@ -1,5 +1,20 @@
 #here we hae to read add the empolye data
 import pickle
+def uniquevalues(eno):
+    with open("emp.text","rb") as fp:
+        emplist = []
+        while (True):
+            try:
+                record = pickle.load(fp)
+                emplist.append(record)
+            except EOFError:
+                break
+    duplicate=False
+    for record in emplist:
+        if(record[0]==eno):
+            duplicate=True
+            break
+    return duplicate
 #here programmer defined exception
 class InvalidNameError(Exception):pass
 class SpaceError(Exception):pass
@@ -35,9 +50,12 @@ def addEmp():
                 lst.append(eno)
                 lst.append(en)
                 lst.append(esal)
-                pickle.dump(lst,fp)
-                print("-"*100)
-                print("FILE SAVED SUCCESSFULLY")
+                dup=uniquevalues(eno)
+                if not dup:
+                    pickle.dump(lst,fp)
+                    print("FILE SAVED SUCCESSFULLY")
+                else:
+                    print("record is empyt")
                 ch=input("do you want to enter data (yes/no)")
                 if ch.lower()=="no":
                     print("thanks for using this program")
