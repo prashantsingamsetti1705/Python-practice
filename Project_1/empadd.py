@@ -1,6 +1,7 @@
 #here we are using the oops by using instance Method and connecting the database
 import mysql.connector as mysql
-class Employeeadd:
+class Employeeadd:#instance method
+    #adding the emp data
     def employee_add(self):
         self.eno=int(input("enter the employee eno number:"))
         self.ename=input("enter the employee ename:")
